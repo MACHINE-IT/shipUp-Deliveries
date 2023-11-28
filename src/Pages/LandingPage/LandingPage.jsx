@@ -1,14 +1,26 @@
+import { useState } from 'react';
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import { Button, Stack, Box, TextField, InputAdornment } from "@mui/material";
+import { IconButton } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 import girlOnScooterSVG from "../../assets/girlOnScooter.svg";
 import VideoCam from "../../assets/VideoCam.svg";
 import Location from "../../assets/Location.jsx";
 import './LandingPage.css';
-import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import YoutubeEmbed from "../../Components/YoutubePopUpVideo/YoutubePopUpVideo.jsx";
 
 const LandingPage = () => {
+    const [showVideoPopup, setShowVideoPopup] = useState(false);
+
+    const handleVideoClick = () => {
+        setShowVideoPopup(true);
+    };
+
+    const closeVideoPopup = () => {
+        setShowVideoPopup(false);
+    };
     return (
         <div>
             <Navbar />
@@ -25,7 +37,7 @@ const LandingPage = () => {
                         </div>
                         <Stack className="joinNowAndPlayDemoSection" direction="row" spacing={4} alignItems="center">
                             <Button className="joinNow contained-button" variant="contained">Join Now</Button>
-                            <img src={VideoCam} alt="play demo" />
+                            <img className="playDemoIcon" src={VideoCam} alt="play demo" onClick={handleVideoClick} />
                             <div className="playDemo">
                                 Play Demo
                             </div>
@@ -35,6 +47,7 @@ const LandingPage = () => {
                         <img src={girlOnScooterSVG} alt="girl sitting on scooter" />
                     </div>
                 </div>
+                {showVideoPopup && <YoutubeEmbed embedId="RD-b72PLH1A" onClose={closeVideoPopup} />}
                 <Box sx={{ boxShadow: 3 }} className="checkPriceCard card-Outline-radius">
                     <div className="priceChecking">
                         <TextField

@@ -1,4 +1,3 @@
-import Navbar from './Components/Navbar/Navbar'
 import LandingPage from './Pages/LandingPage/LandingPage'
 import './App.css';
 

@@ -61,3 +61,7 @@ Textfield {
     font-weight: 400;
     line-height: 150%;
 }
+
+.playDemoIcon:hover {
+    cursor: pointer;
+}

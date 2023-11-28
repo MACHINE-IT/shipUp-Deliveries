@@ -33,13 +33,3 @@
 .nav-actions>button {
     margin: 5px;
 }
-
-.NativeSelect::before {
-    border-bottom: none !important;
-    /* To remove the underline of mui select */
-}
-
-.NativeSelect::after {
-    border-bottom: none !important;
-    /* To remove the underline of mui select */
-}

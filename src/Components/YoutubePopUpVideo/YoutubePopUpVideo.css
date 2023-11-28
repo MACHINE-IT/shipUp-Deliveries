@@ -1,0 +1,28 @@
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56%;
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.close-button {
+    z-index: 2000;
+    position: absolute;
+    top: -5px;
+    right: 50%;
+    color: white;
+    border: 1px solid black;
+}
+
+.close-button:hover {
+    color: red;
+    border: red;
+}

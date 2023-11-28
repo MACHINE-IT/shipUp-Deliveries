@@ -1,6 +1,5 @@
 import ShipUpSVG from "../../assets/ShipUp";
-import { Button, Stack, NativeSelect } from "@mui/material";
-import FormControl from '@mui/material/FormControl';
+import { Button, Stack } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './Navbar.css'
 
