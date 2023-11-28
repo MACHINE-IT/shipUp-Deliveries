@@ -1,0 +1,105 @@
+.footer {
+    margin-top: 3rem;
+    background-color: #2f2d58;
+    color: #fff;
+}
+
+.footer .container {
+    max-width: 80vw;
+    margin: auto;
+    padding: 3rem;
+}
+
+.footer .first {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.footer .first>div {
+    max-width: 20%;
+    margin: 0 auto auto 0;
+}
+
+.footer .first .info {
+    /* color: red;
+  background-color: yellow; */
+    text-align: left;
+    padding: 0 1rem 1rem 0;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.footer .first .info li {
+    margin: 0.4rem auto;
+    font-family: Lato;
+    font-size: 0.8rem;
+}
+
+.footer .first div.heading {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: Lato;
+}
+
+.footer .first div.heading-shipup {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer .first div.heading-shipup .ship {
+    color: #F67366;
+}
+
+.footer .first div.heading-shipup .up {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.footer .second {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footer .second span.up {
+    color: #F67366;
+    font-weight: bold;
+}
+
+.footer .second span.ng {
+    font-weight: bold;
+}
+
+.footer .footer-social ul {
+    display: flex;
+    gap: 1rem;
+    width: 250px;
+}
+
+.footer .footer-social ul svg {
+    font-size: 1rem;
+    margin-top: 9px;
+    margin-left: 10px;
+    color: #2f2d58;
+}
+
+.footer .footer-social ul li {
+    text-align: left;
+    padding-left: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    min-height: 35px;
+    min-width: 35px;
+}
+
+div.divider {
+    max-height: 1.5px;
+    min-height: 1.5px;
+    background-color: #999;
+    margin: 2rem auto;
+    border-radius: 10px;
+}

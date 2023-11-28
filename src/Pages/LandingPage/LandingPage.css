@@ -1,0 +1,63 @@
+.landingPageInfo {
+    margin: auto 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold-black-typography {
+    color: #141414;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 60px */
+    text-transform: capitalize;
+}
+
+.bold-orange-typography {
+    color: var(--simorange, #F67366);
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+
+.provisQuoteDetail {
+    color: #333;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 21px */
+}
+
+.checkPriceCard {
+    width: 90%;
+    margin: auto;
+    padding: 2px;
+}
+
+.checkPrice {
+    padding: 15px 35px !important;
+}
+
+.priceChecking {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2%;
+}
+
+Textfield {
+    color: #333;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}

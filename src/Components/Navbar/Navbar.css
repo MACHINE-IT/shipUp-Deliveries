@@ -1,0 +1,45 @@
+.navbar {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.companyLi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4px !important;
+}
+
+.companyLiIcon {
+    margin-top: -2px;
+}
+
+.nav-items-li:hover {
+    cursor: pointer;
+    color: #F67366;
+}
+
+
+
+.nav-actions>button {
+    margin: 5px;
+}
+
+.NativeSelect::before {
+    border-bottom: none !important;
+    /* To remove the underline of mui select */
+}
+
+.NativeSelect::after {
+    border-bottom: none !important;
+    /* To remove the underline of mui select */
+}
