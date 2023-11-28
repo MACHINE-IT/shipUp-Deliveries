@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+.header-title:hover {
+    cursor: pointer;
+}
+
 .nav-items {
     display: flex;
     flex-direction: row;

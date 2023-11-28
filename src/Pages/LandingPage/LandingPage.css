@@ -62,6 +62,11 @@ Textfield {
     line-height: 150%;
 }
 
-.playDemoIcon:hover {
+.playDemo {
+    margin-left: -2px !important;
+}
+
+.playDemoIcon,
+.playDemo:hover {
     cursor: pointer;
 }
