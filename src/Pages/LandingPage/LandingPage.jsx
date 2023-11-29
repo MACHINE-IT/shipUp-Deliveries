@@ -2,8 +2,6 @@ import { useState } from 'react';
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import { Button, Stack, Box, TextField, InputAdornment } from "@mui/material";
-import { IconButton } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
 import girlOnScooterSVG from "../../assets/girlOnScooter.svg";
 import VideoCam from "../../assets/VideoCam.svg";
 import Location from "../../assets/Location.jsx";

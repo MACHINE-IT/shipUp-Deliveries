@@ -16,16 +16,17 @@
     justify-content: center;
 }
 
-.companyLi {
+/* .companyLi {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     margin-top: 4px !important;
 }
 
 .companyLiIcon {
     margin-top: -2px;
-}
+} */
 
 .nav-items-li:hover {
     cursor: pointer;

@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import ShipUpSVG from "../../assets/ShipUp";
 import { Button, Stack } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Popover from '@mui/material/Popover';
+import Typography from '@mui/material/Typography';
 import './Navbar.css'
+import NavbarItemSubMenu from '../NavbarItemSubMenu/NavbarItemSubMenu';
 
 const Navbar = () => {
     const requestQuoteButtonHandler = () => {
@@ -12,6 +16,18 @@ const Navbar = () => {
 
     }
 
+    const [anchorEl, setAnchorEl] = useState(null);
+
+    const handlePopoverOpen = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handlePopoverClose = () => {
+        setAnchorEl(null);
+    };
+
+    const open = Boolean(anchorEl);
+
     return (
         <div className="navbar" >
             <Stack className="nav-items" direction="row" spacing={4} alignItems="center">
@@ -19,7 +35,8 @@ const Navbar = () => {
                     <ShipUpSVG />
                 </div>
                 <div className="companyLi nav-items-li">
-                    Company <span className="companyLiIcon">< ExpandMoreIcon /></span>
+                    <NavbarItemSubMenu menuListItem="Company" anchorEl={anchorEl} handlePopoverOpen={handlePopoverOpen} handlePopoverClose={handlePopoverClose} />
+                    {/* <NavbarItemSubMenu menuList="Company" /> */}
                 </div>
                 <div className="servicesLi nav-items-li">
                     Services
