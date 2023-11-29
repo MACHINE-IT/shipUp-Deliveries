@@ -1,9 +1,6 @@
 import { useState } from 'react';
 import ShipUpSVG from "../../assets/ShipUp";
 import { Button, Stack } from "@mui/material";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Popover from '@mui/material/Popover';
-import Typography from '@mui/material/Typography';
 import './Navbar.css'
 import NavbarItemSubMenu from '../NavbarItemSubMenu/NavbarItemSubMenu';
 
@@ -26,7 +23,6 @@ const Navbar = () => {
         setAnchorEl(null);
     };
 
-    const open = Boolean(anchorEl);
 
     return (
         <div className="navbar" >
